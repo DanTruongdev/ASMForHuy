@@ -38,6 +38,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.activity:activity:1.8.0")
     testImplementation("junit:junit:4.13.2")
+
     //ui
     implementation("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
 

@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -132,6 +133,7 @@ public class ObservationRecycleViewAdapter  extends RecyclerView.Adapter<Observa
                     public void onPermissionGranted() {
                         if (isFacebookLiteInstalled()) {
                             Uri imageUri = saveBitmap(imageSrc);
+                            Log.i("Data", imageUri.toString());
                             if (imageUri != null) {
                                 shareImageToFacebook(imageUri);
                             }
